@@ -74,7 +74,7 @@ quality(rules_c)
 #Redundant Rules
 inspect(rules)
 (redundant = which(is.redundant(rules)))
-inspect(rules[c(8,9,10,11,12,14,14)])
+inspect(rules[c(3,7,8,9,10,11,12,13,14)])
 inspect(rules[redundant])
 inspect(rules)
 write.csv(as(rules,"data.frame"), file='./data/rulesR.csv')
@@ -110,3 +110,4 @@ write.csv(rules_DF, './data/myrules1.csv')
 
 #Visualisation
 plot(rules)
+
